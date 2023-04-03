@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unstop</title>
+    
+    <style>
+        
+        
+        .navbar{
+            background-color:white;
+            margin-right: 300px;
+        }
+        .navbar-brand{
+            font-family: 'Rubik', sans-serif;
+            margin:3px;
+            float: left;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            font-family: 'sono','sans-serif';
+            float:left;
+            color: rgb(10,76,175);
+            list-style: none;
+            padding:10px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            margin-left: 40px;
+            color: rgb(14, 75, 166);
+        }
+        .navbar li a:hover{
+            color:rgba(117, 106, 67, 0.449);
+        }
+        .search{
+            float: right;
+            color: rgba(220, 214, 289, 0.974);
+            margin-left: 60px;
+            position:absolute;
+        }
+        .navbar input{
+            margin-left: 970px;
+            margin-top: 6px;
+            position: absolute;
+            border:none;
+        }
+        .navbar input:visited{
+            border: none;
+        }
+        .navbar input:hover{
+            border: none;
+        }
+        .box{
+            margin-top: 6px;
+            position: absolute;
+            margin-left: 941px;
+            width: 200px;
+            height: 3px;
+            background-color: white;
+            border-radius: 77px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 3px solid rgb(10,76,175);
+        }
+        
+        .btn2 {
+    background-color: rgb(87 130 195);
+    position: absolute;
+    width: 65px;
+    height: 31px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 1368px;
+    margin-top: -90px;
+    cursor: pointer;
+}
+        .btn2:hover{
+            border: 5px solidrgb(10,76,175);
+            
+        }
+
+        .connect{
+            font-family: 'Roboto', sans-serif;
+            margin:56px;
+            font-size: 77px;
+            color: rgb(10, 76, 175);
+        }
+        .text{
+            font-family: 'Roboto', sans-serif;
+            font-size: 21px;
+            margin-left: 55px;
+            color: rgb(10, 76, 175);
+            margin-bottom: 260px;
+            margin-right: 400px;
+        }
+        
+        .industry{
+            font-family: 'Roboto', sans-serif;
+            margin-top: 20px;
+            margin-left: 23px;
+            font-size: 23px;
+            
+        }
+        .trust{
+            font-family: 'Roboto', sans-serif;
+            margin-left: 23px;
+            font-size: 33px;
+            font-weight: bold;
+            color: rgb(10, 76, 175);
+            
+        }
+        .explore{
+            font-family: 'Roboto', sans-serif;
+            margin-left: 23px;
+            font-weight: 300px ;
+            font-size:45px ;
+            color: rgb(10, 76, 175);
+        }
+        .participate{
+            font-family: 'Roboto', sans-serif;
+            padding-top: 4px;
+            margin-left: 23px;
+            color: rgb(10, 76, 175);
+            margin-bottom: 30px;
+        }
+        .get{
+            font-family: 'Roboto', sans-serif;
+            margin-top: 22px;
+            margin-left: 23px;
+            font-weight: 300px ;
+            font-size:45px ;
+            color: rgb(10, 76, 175);
+            margin-bottom: 3px;
+        }
+        .work{
+            font-family: 'Roboto', sans-serif;
+            padding-top: 4px;
+            margin-left: 23px;
+            color: rgb(10, 76, 175);
+            margin-bottom: 44px;
+            
+        }
+        .last1,.last2,.last3{
+            font-family: 'Roboto', sans-serif;
+            text-align: left;  
+            text-align:center ; 
+            
+            color: rgb(51, 109, 197);
+        }
+        .centre{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+
+        }
+       .row{
+        float:left;
+        align-items: flex-end;
+       }
+       .store{
+        height:auto;
+        width: 100%;
+       }
+       .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 500px;
+    margin-bottom: 210px;
+    position: absolute;
+    margin-left: 821px;
+    margin-top: -680px;
+    }
+
+
+   .parent img{
+    height: 198px;
+    width: 200px;
+    margin-bottom: 89px;
+}  
+   }
+
+
+.firm{
+    margin-bottom: 33px;
+    align-self:flex-start;
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 40px;
+grid-row-gap: 0px;
+}
+ 
+
+
+.aboveexplore {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 10px;
+height: 300px;
+width: 500px;
+margin-bottom: 2000px;
+}
+
+
+.aboveexplore img{
+    height: 300px;
+    width: 400px;
+    align-self: center;
+    margin-right: 83px;
+}
+
+
+
+.belowexplore{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 10px;
+height: 300px;
+width: 500px;
+}
+
+
+
+.belowexplore img{
+    height: 300px;
+    width: 400px;
+    margin-bottom: 34px;
+}
+.gethired{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 10px;
+height: 300px;
+margin-bottom: 73px;
+width: 500px;
+}
+
+
+     .gethired img{
+    height: 300px;
+    width: 400px;
+    margin-bottom: 33px;
+     }
+
+
+       .aboveexplore{
+        margin-top: 23px;
+        margin-bottom: 23px;
+       }
+
+
+
+.class{
+    position:relative;
+    text-align: centre;
+    color: black;
+}
+
+       
+       
+    </style>
+    
+</head>
+<body >
+    <nav class="navbar" >
+        <ul>
+            <a class="navbar-brand  " href="#">
+                <img style="margin-left: 160px; margin-top: 0px; " src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg" alt="" srcset="" height="80px">
+                
+            </a>
+            <div class="search">
+                <div class="box">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <br>
+                <input type="text" id="" placeholder=" Search">
+            </div>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn-icons-png.flaticon.com/512/3068/3068327.png" alt="" srcset="" width="20" height="20"><br><a href="#">Learn</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://w7.pngwing.com/pngs/768/98/png-transparent-computer-icons-goal-miscellaneous-logo-business.png" alt="" width="20" height="20"><br><a href="#">Practice</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn-icons-png.flaticon.com/512/900/900772.png" alt="" width="20" height="20"><br><a href="#">Compete</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://w7.pngwing.com/pngs/261/968/png-transparent-black-and-grey-idea-logo-illustration-incandescent-light-bulb-light-bulb-background-angle-electronics-lamp.png" alt="" width="20" height="20"><br><a href="#">Mentorship</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.clipartmax.com/png/middle/32-329418_find-best-jobs-in-our-portal-job-logo.png" alt="" width="20" height="22"><br><a href="#">Jobs</a></li>
+        </ul>
+        <!-- <button class="btn1">Host</button> -->
+        <button class="btn2">login</button>
+    </nav>
+    <hr width="100%"
+        size="2" color="lightgrey"
+        noshade>
+    <header>
+        
+
+
+<div class="connect">Connecting<br><b> Talent,Colleges, <br> Recruiters</b></div>
+
+<div class="text">Explore opportunities<br> from across the globe to<br> learn ,showcase skills, gain CV points <br>& get hired by your dream company.</div>
+<div class="parent">
+    <img src="https://cdn.unstop.com/uploads/images/home/home-hero-learn.png?d=324x406" >
+<img src="https://cdn.unstop.com/uploads/images/home/home-hero-practice.png?d=324x406" > 
+<img src="https://cdn.unstop.com/uploads/images/home/home-hero-mentorships.png?d=324x406" > 
+<img src="https://cdn.unstop.com/uploads/images/home/home-hero-compete.png?d=324x406"> 
+<img src="https://cdn.unstop.com/uploads/images/home/home-hero-jobs.png?d=324x406"> 
+<img src="https://cdn.unstop.com/uploads/images/home/home-hero-blogs.png?d=324x406">
+</div>
+ <hr color="grey">
+
+<div class="industry">Industry veterans 
+</div>
+<div class="trust"><b>trust us :</b></div>
+<div class="firm" id="box2">
+    <img src="https://cdn.freebiesupply.com/images/large/2x/hewlett-packard-logo-black-and-white.png" height="80px" width="80 px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png" height="80px" width="180">
+<img src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" alt="Error" height="100px" width="100px">
+
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/63e0f796d74c0_uber.png?d=120x120">
+<img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" height="80" width="150">
+
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/607e6f759cd8d_amazon.png?d=150x45">
+<img src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png" height="80px">
+</div>
+
+<hr color="grey">
+
+
+
+
+<div class="aboveexplore">
+<img src="https://cdn.unstop.com/uploads/images/home/learn-bg-image.png?d=747x534">
+<img src="https://cdn.unstop.com/uploads/images/home/practice-bg-image.png?d=747x533">
+<img src="https://cdn.unstop.com/uploads/images/home/mentorships-bg-new.png?d=747x534" class="aboveexplore"> 
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="explore">Explore Opportunities</div>
+<div class="participate">Participate ,Showcase Skills & Gain CV Points through online & offline opportunities of your interest & make your mark!</div>
+<div class="belowexplore">
+<img src="https://cdn.unstop.com/uploads/images/compete/student.png?d=560x340">
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/63d112f8a025d_professional.png?d=560x340">
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/63da479e86649_teams_new.png?d=560x340">
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/63da47fe2c821_solo_new.png?d=560x340">
+</div>
+<br>
+<br>
+
+<div class="get">Get Hired</div>
+<div class="work">Work with your dream companies by applying to hiring challenges and full-time & part-time jobs/internships.</div>
+<div class="gethired">
+<img src="https://cdn.unstop.com/uploads/images/home/job.png?d=570x340" >
+<img src="https://cdn.unstop.com/uploads/images/home/internship.png?d=570x340" >
+<img src="https://cdn.unstop.com/uploads/images/home/hiring-challenges.png?d=570x340" >
+<img src="https://cdn.unstop.com/uploads/images/home/paid-internship.png?d=570x340" >
+</div>
+</div>
+</div>
+
+
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/63db3ac0bfbd4_download_app_new.png?d=2360x912" class="store" >
+
+<img src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg" class="centre">
+
+    </header>
+    
+
+</body>
+</html>
